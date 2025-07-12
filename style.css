@@ -250,15 +250,3 @@ h3 {
 }
 
 
-@media (max-width: 768px) {
-    .notes-learningTracker-Bookmarks {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .notes,
-    .learning-tracker,
-    .bookmarks {
-        width: 90%;
-    }
-}
