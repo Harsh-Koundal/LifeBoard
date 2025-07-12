@@ -1,0 +1,264 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+body {
+    background-color: rgb(34, 34, 54);
+    color: white;
+}
+
+header {
+    padding: 10px 12px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    overflow-y: hidden;
+}
+
+.goal-task {
+    gap: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 45px;
+
+}
+
+h3 {
+    margin: 12px;
+}
+
+.goals {
+    font-size: large;
+    border: 1px solid rgb(130, 122, 122);
+    height: max-content;
+    width: 50%;
+    border-radius: 12px;
+    margin: 12px;
+    padding: 12px;
+    overflow-y: hidden
+}
+
+.goals ul {
+    margin: 25px;
+}
+
+.goals ul li {
+    margin: 25px;
+}
+
+.task {
+    border: 1px solid rgb(130, 122, 122);
+    height: max-content;
+    width: 40%;
+    border-radius: 12px;
+    margin: 12px;
+    padding: 12px;
+}
+
+.task .check {
+    display: flex;
+    margin: 25px;
+}
+
+.task .check input {
+    margin-right: 15px;
+}
+
+.notes-learningTracker-Bookmarks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 35px;
+    gap: 20px;
+}
+
+.notes {
+    border: 1px solid rgb(130, 122, 122);
+    width: 35%;
+    border-radius: 12px;
+}
+
+.notes h3 {
+    margin-left: 15px;
+}
+
+.notes ul {
+    margin: 32px 45px;
+}
+
+.notes p {
+    margin-left: 12px;
+}
+
+.learning-tracker {
+    border: 1px solid rgb(130, 122, 122);
+    width: 30%;
+    border-radius: 12px;
+    height: max-content;
+}
+
+.learning-tracker .name-percent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 12px;
+
+}
+
+.learning-tracker .outer {
+    width: 90%;
+    height: 6px;
+    background-color: aliceblue;
+    margin: 10px 15px;
+    border-radius: 12px;
+}
+
+.learning-tracker .inner {
+    width: 20%;
+    height: 6px;
+    background-color: rgb(45, 147, 237);
+    border-radius: 12px;
+}
+
+.bookmarks {
+    border: 1px solid rgb(130, 122, 122);
+    width: 30%;
+    border-radius: 12px;
+    height: max-content;
+}
+
+.bookmarks ul {
+    margin: 35px;
+
+}
+
+.bookmarks p {
+    margin: 12px;
+}
+
+.bookmarks a {
+    text-decoration: none;
+    color: white;
+}
+
+.moodtracker-pomodorotimer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 0 45px 10px;
+    gap: 20px;
+}
+
+.mood-tracker {
+    border: 1px solid rgb(130, 122, 122);
+    border-radius: 12px;
+    height: max-content;
+    height: 120px;
+    padding: 12px;
+}
+
+.mood-tracker p:nth-child(2) {
+    margin-top: 22px;
+}
+
+.timer {
+    border: 1px solid rgb(130, 122, 122);
+    border-radius: 12px;
+    height: max-content;
+    height: 120px;
+    padding: 12px;
+    width: max-content;
+}
+
+.timer h1 {
+    text-align: center;
+}
+
+.timer button {
+    margin: 10px 12px;
+    border: none;
+    width: 70px;
+    height: 30px;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+}
+
+#start {
+    background-color: #2cc92c;
+}
+
+#stop {
+    background-color: red;
+}
+
+#reset {
+    background-color: blue;
+}
+
+#add-goal {
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+/* Overlay (black background) */
+.goal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+/* Input inside overlay */
+.input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 300px;
+    outline: none;
+    background-color: #fff;
+    color: #000;
+
+}
+
+.add-notes {
+    margin-bottom: 12px;
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+#add-task {
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+.add-book {
+    cursor: pointer;
+    color: antiquewhite;
+}
+
+
+@media (max-width: 768px) {
+    .notes-learningTracker-Bookmarks {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .notes,
+    .learning-tracker,
+    .bookmarks {
+        width: 90%;
+    }
+}

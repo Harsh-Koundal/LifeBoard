@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeBoard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>LifeBoard</h1>
+        <h1><i class="fa-solid fa-moon"></i></h1>
+    </header>
+    <main>
+        <div class="goal-task">
+
+            <div class="goals">
+
+
+                <h3>Goals</h3>
+                <ul class="goal-ul">
+                </ul>
+                <p id="add-goal">Add Goals</p>
+
+            </div>
+            <div class="task">
+                <h3>Tasks</h3>
+
+                <p id="add-task">Add Task</p>
+
+            </div>
+        </div>
+
+        <div class="notes-learningTracker-Bookmarks">
+            <div class="notes">
+                <h3>Notes</h3>
+                <ul class="notes-ul">
+                </ul>
+                <p class="add-notes">Add Notes</p>
+            </div>
+            <div class="learning-tracker">
+                <h3>Learning Tracker</h3>
+                <div class="name-percent">
+                    <p>HTML</p>
+                    <p class="percent">100%</p>
+                </div>
+                <div class="outer">
+                    <div class="inner"></div>
+                </div>
+                <div class="name-percent">
+                    <p>CSS</p>
+                    <p class="percent">100%</p>
+                </div>
+                <div class="outer">
+                    <div class="inner"></div>
+                </div>
+                <div class="name-percent">
+                    <p>Javacript</p>
+                    <p class="percent">%</p>
+                </div>
+                <div class="outer">
+                    <div class="inner"></div>
+                </div>
+            </div>
+
+            <div class="bookmarks">
+                <h3>BookMarks</h3>
+                <ul>
+
+                </ul>
+                <p class="add-book">Add BookMark</p>
+            </div>
+        </div>
+
+        <div class="moodtracker-pomodorotimer">
+            <div class="mood-tracker">
+                <h3>Morning Mood Tracker</h3>
+                <p id="morning-mood">🙂</p>
+                <p id="add-mood">Add Entry</p>
+            </div>
+            <div class="mood-tracker">
+                <h3>Evening Mood Tracker</h3>
+                <p id="evening-mood">🙂</p>
+                <p id="add-mood">Add Entry</p>
+            </div>
+            <div class="timer">
+                <h3>Pomodoro Timer</h3>
+                <h1>25:00</h1>
+                <button id="start">Start</button>
+                <button id="stop">Stop</button>
+                <button id="reset">Reset</button>
+            </div>
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
